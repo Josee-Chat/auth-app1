@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Full-Stack Authentication System - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the front-end code for a full-stack authentication system built with React, Express, MongoDB, Heroku, and Netlify. The front-end provides a user interface for user registration, login, and authentication.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Before running the front-end application, ensure that you have the following installed on your system:
 
-### `npm start`
+- Node.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository to your local machine:
 
-### `npm test`
+git clone <repository-url>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+cd fullstack-authentication-system/frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+markdown
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the dependencies:
 
-### `npm run eject`
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Configure environment variables:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Create a `.env` file in the root of the project directory and set the following variable:
 
-## Learn More
+REACT_APP_API_URL=<backend-api-url>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+csharp
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Replace `<backend-api-url>` with the URL where the backend server is running. For example, `http://localhost:5000` if running locally.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Start the application:
 
-### Analyzing the Bundle Size
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+vbnet
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The front-end application will be served on `http://localhost:3000`.
 
-### Advanced Configuration
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To deploy the front-end application to Netlify, follow these steps:
 
-### Deployment
+1. Create a new site on Netlify.
+2. Set the build command as `npm run build` and the publish directory as `build`.
+3. Set the environment variable `REACT_APP_API_URL` in the Netlify site's settings to the URL of your deployed backend API.
+4. Connect the Netlify site to your Git repository and trigger a new build.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributors
 
-### `npm run build` fails to minify
+- [Your Name](https://github.com/your-github-username)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you would like to contribute to this project, feel free to submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
