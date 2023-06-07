@@ -15,7 +15,7 @@ export default function Register() {
     // set configurations
     const configuration = {
       method: "post",
-      url: "https://vercel.com/josee-chat/auth-app1//register",
+      url: "https://auth-application.herokuapp.com//register",
       data: {
         email,
         password,

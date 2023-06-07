@@ -11,7 +11,7 @@ export default function FreeComponent() {
     // set configurations for the API call here
     const configuration = {
       method: "get",
-      url: "https://vercel.com/josee-chat/auth-app1/free-endpoint",
+      url: "https://auth-application.herokuapp.com//free-endpoint",
     };
 
     // make the API call

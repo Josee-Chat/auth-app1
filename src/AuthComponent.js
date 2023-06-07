@@ -16,7 +16,7 @@ export default function AuthComponent() {
     // set configurations for the API call here
     const configuration = {
       method: "get",
-      url: "https://vercel.com/josee-chat/auth-app1/auth-endpoint",
+      url: "https://auth-application.herokuapp.com//auth-endpoint",
       headers: {
         Authorization: `Bearer ${token}`,
       },

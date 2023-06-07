@@ -17,7 +17,7 @@ export default function Login() {
     // set configurations
     const configuration = {
       method: "post",
-      url: "https://vercel.com/josee-chat/auth-app1//login",
+      url: "https://auth-application.herokuapp.com///login",
       data: {
         email,
         password,
