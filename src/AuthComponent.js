@@ -43,7 +43,7 @@ export default function AuthComponent() {
 
   return (
     <div className="text-center">
-      <h1>Auth Component</h1>
+      <h1>log in sécurisé</h1>
 
       {/* displaying our message from our API call */}
       <h3 className="text-danger">{message}</h3>

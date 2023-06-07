@@ -43,29 +43,29 @@ export default function Login() {
 
   return (
     <>
-      <h2>Login</h2>
+      <h2>Connexion</h2>
       <Form onSubmit={(e) => handleSubmit(e)}>
         {/* email */}
         <Form.Group controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Adresse courriel</Form.Label>
           <Form.Control
             type="email"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter email"
+            placeholder="Veuillez entrer votre courriel"
           />
         </Form.Group>
 
         {/* password */}
         <Form.Group controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Mot de passe</Form.Label>
           <Form.Control
             type="password"
             name="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
+            placeholder="Mot de passe"
           />
         </Form.Group>
 
@@ -75,14 +75,14 @@ export default function Login() {
           type="submit"
           onClick={(e) => handleSubmit(e)}
         >
-          Login
+          Se connecter
         </Button>
 
         {/* display success message */}
         {login ? (
-          <p className="text-success">You Are Logged in Successfully</p>
+          <p className="text-success">Vous êtes connecté</p>
         ) : (
-          <p className="text-danger">You Are Not Logged in</p>
+          <p className="text-danger">Vous n'êtes pas connecté</p>
         )}
       </Form>
     </>

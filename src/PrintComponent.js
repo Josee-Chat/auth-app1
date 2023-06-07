@@ -10,7 +10,7 @@ export default function PrintComponent() {
       <div id="print_component">
         {/* button to trigger printing of target component */}
         <ReactToPrint
-          trigger={() => <Button>Print this out!</Button>}
+          trigger={() => <Button>Imprimez-moi!</Button>}
           content={() => componentRef}
         />
 
@@ -28,28 +28,28 @@ class ComponentToPrint extends React.Component {
   render() {
     return (
       <div>
-        <h2 style={{ color: "green" }}>Attendance</h2>
+        <h2 style={{ color: "green" }}>Utilisateur</h2>
         <table>
           <thead>
             <th>S/N</th>
-            <th>Name</th>
+            <th>Nom</th>
             <th>Email</th>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>Njoku Samson</td>
-              <td>samson@yahoo.com</td>
+              <td>Josée La Riccia</td>
+              <td>joseelariccia@gmail.com</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Ebere Plenty</td>
-              <td>ebere@gmail.com</td>
+              <td>Francis Do Monte</td>
+              <td>Francis@gmail.com</td>
             </tr>
             <tr>
               <td>3</td>
-              <td>Undefined</td>
-              <td>No Email</td>
+              <td>Grégoire</td>
+              <td>gregoire@gmail.com</td>
             </tr>
           </tbody>
         </table>

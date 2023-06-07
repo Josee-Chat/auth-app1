@@ -34,29 +34,29 @@ export default function Register() {
 
   return (
     <>
-      <h2>Register</h2>
+      <h2>S'enregistrer</h2>
       <Form onSubmit={(e) => handleSubmit(e)}>
         {/* email */}
         <Form.Group controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Adresse courriel</Form.Label>
           <Form.Control
             type="email"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter email"
+            placeholder="Veuiilez entrer votre courriel"
           />
         </Form.Group>
 
         {/* password */}
         <Form.Group controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Mot de passe</Form.Label>
           <Form.Control
             type="password"
             name="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
+            placeholder="Mot de passe"
           />
         </Form.Group>
 
@@ -66,14 +66,14 @@ export default function Register() {
           type="submit"
           onClick={(e) => handleSubmit(e)}
         >
-          Register
+          S'enregistrer
         </Button>
 
         {/* display success message */}
         {register ? (
-          <p className="text-success">You Are Registered Successfully</p>
+          <p className="text-success">Vous êtes enregistré</p>
         ) : (
-          <p className="text-danger">You Are Not Registered</p>
+          <p className="text-danger">Vous n'êtes pas enregistré</p>
         )}
       </Form>
     </>
